@@ -5,8 +5,14 @@
 // Use the following line of code for the conversion (this uses a Math function which we will discuss more in future lessons):
 //
 // ```var CTEMP = Math.round((FTEMP - 32) * 5 / 9);```
+do
+    {
+    var FTEMP = parseInt(prompt("What is the Temperature outside?"));
+    }
 
-var FTEMP = parseInt(prompt("What is the Temperature outside?"));
+while (isNaN(FTEMP));
+
 var CTEMP = Math.round((FTEMP - 32) * 5/9 );
+
 
 console.log(FTEMP + " degrees" + " Fahrenheit equals " + CTEMP + " degrees" + " in Celcius.");
